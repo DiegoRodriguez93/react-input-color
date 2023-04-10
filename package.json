@@ -1,6 +1,6 @@
 {
   "name": "react-input-color-v2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React input color popover component with hsv color picker",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
