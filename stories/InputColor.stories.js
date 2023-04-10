@@ -39,7 +39,9 @@ export const Demo = () => {
         onChange={(e) => setInitial(e.target.value)}
       />
       <br />
-      <InputColor initialValue={initial} onChange={handleChange} />
+      <InputColor initialValue={initial} onChange={handleChange}>
+        <span>Custom Item here</span>
+      </InputColor>
     </div>
   );
 };
@@ -70,7 +72,9 @@ export const Alpha = () => {
       >
         {JSON.stringify(color, null, 2)}
       </pre>
-      <InputColor initialValue="#5e72e412" onChange={handleChange} />
+      <InputColor initialValue="#5e72e412" onChange={handleChange}>
+        <span>Custom Item here</span>
+      </InputColor>
     </div>
   );
 };

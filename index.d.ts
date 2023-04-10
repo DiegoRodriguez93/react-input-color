@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { ReactNode } from 'react';
 
 export class Color {
   h: number;
@@ -17,6 +17,7 @@ export interface InputColorProps {
   placement?: string;
   onChange?(color: Color): void;
   disabled?: boolean;
+  children: ReactNode;
 }
 
 export default function InputColor(props: InputColorProps);
