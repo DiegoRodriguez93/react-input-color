@@ -1,4 +1,6 @@
-# react-input-color
+# react-input-color-v2
+This is a library based on https://www.npmjs.com/package/react-input-color, but add a new feature to be used as a Popover instead of have a default input picker
+
 
 [![npm](https://img.shields.io/npm/v/react-input-color.svg)](https://www.npmjs.com/package/react-input-color)
 [![npm](https://img.shields.io/npm/dm/react-input-color.svg)](https://www.npmjs.com/package/react-input-color)
@@ -21,36 +23,26 @@ npm install react-input-color --save
 yarn add react-input-color
 ```
 
-### Storybook Demo
-
-[https://react-input-color.caitouyun.com](https://react-input-color.caitouyun.com)
-
 ### Usage
 
 The `initialValue` property supports 6 (`#RRGGBB`) and 8 (`#RRGGBBAA`) digits hex value.
 
 ```javascript
 import React from 'react';
-import InputColor from 'react-input-color';
+import PopoverInputColor from 'react-input-color';
 
 function App() {
   const [color, setColor] = React.useState({});
 
   return (
     <div>
-      <InputColor
+      <PopoverInputColor
         initialValue="#5e72e4"
         onChange={setColor}
         placement="right"
       />
-      <div
-        style={{
-          width: 50,
-          height: 50,
-          marginTop: 20,
-          backgroundColor: color.rgba,
-        }}
-      />
+      <span>Select Color</span>
+      </PopoverInputColor>
     </div>
   );
 }
