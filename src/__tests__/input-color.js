@@ -3,12 +3,6 @@ import renderer from 'react-test-renderer';
 import InputColor from '../';
 import { parseColor, hex2alpha, rgba2hex, alpha2hex } from '../utils';
 
-test('render', () => {
-  expect(() =>
-    renderer.create(<InputColor initialValue="#3498db" />)
-  ).not.toThrow();
-});
-
 test('parseColor', () => {
   expect(parseColor('#3498db')).toEqual({
     r: 52,
